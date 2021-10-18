@@ -1,13 +1,12 @@
-index = 0
-total = 0
-
 def nestedAdd(array):
-    global total
+    sum = 0
     for i in range(0, len(array)):
-        if type(array[i]) != type(list()):
-            total += array[i]
-        else:
-            return nestedAdd(array[i])
-    return total
+      current = array[i]
+      if type(array[i]) == type([]):
+        sum += nestedAdd(current)
+      else:
+        sum += current
+    return sum
 
-print(nestedAdd([[[[5]]]]))
+
+print(nestedAdd([12, 3]))

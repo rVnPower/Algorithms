@@ -14,7 +14,7 @@
 - [x] Nested Numbers
 ##### JavaScript
 - [] Fibonacci
-- [] Nested Numbers
+- [x] Nested Numbers
 
 
 

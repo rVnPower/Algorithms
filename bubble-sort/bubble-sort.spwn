@@ -1,0 +1,16 @@
+bubbleSort = (nums) {
+    let swapped = true
+    while swapped {
+        swapped = false
+        for i in 0..nums.length-1 {
+            if nums[i] > nums[i+1] {
+                swapped = true
+                [nums[i], nums[i+1]] = [nums[i+1], nums[i]]
+            }
+        }
+    return nums
+    }
+}
+
+a = bubbleSort([1, 4, 3, 10, 7])
+$.print(a)
